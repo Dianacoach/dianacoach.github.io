@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>International Coaching Times</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+background:#2e5f4d;
+background-image:url("back5.png");
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+color:white;
+text-align:center;
+margin:0;
+padding:30px;
+}
+
+/* subtle dark overlay for readability */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.35);
+z-index:-1;
+}
+
+h1{
+font-size:36px;
+margin-bottom:10px;
+}
+
+.subtitle{
+font-size:18px;
+margin-bottom:40px;
+opacity:0.9;
+}
+
+/* Madrid main box */
+
+.madrid-box{
+background:#d4af37;
+color:#2e5f4d;
+padding:30px;
+border-radius:12px;
+max-width:500px;
+margin:auto;
+margin-bottom:40px;
+}
+
+.madrid-time{
+font-size:40px;
+font-weight:bold;
+margin-top:10px;
+}
+
+/* Grid */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.city{
+background:white;
+color:#2e5f4d;
+padding:20px;
+border-radius:10px;
+}
+
+.city h3{
+margin:0;
+font-size:20px;
+}
+
+.time{
+font-size:28px;
+margin-top:10px;
+font-weight:bold;
+}
+
+.open{
+margin-top:10px;
+font-size:14px;
+opacity:0.8;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>International Coaching Times</h1>
+<div class="subtitle">Available Session Window</div>
+
+<div class="madrid-box">
+<h2>Madrid, Spain (Local Coaching Time)</h2>
+<div class="madrid-time" id="madridClock"></div>
+<div>Session Hours: <b>11:00 – 23:00</b></div>
+</div>
+
+<div class="grid">
+
+<div class="city">
+<h3>New York, USA</h3>
+<div class="time" id="nyc"></div>
+<div class="open">Session: 05:00 – 17:00</div>
+</div>
+
+<div class="city">
+<h3>Arizona, USA</h3>
+<div class="time" id="arizona"></div>
+<div class="open">Session: 04:00 – 16:00</div>
+</div>
+
+<div class="city">
+<h3>Los Angeles, USA</h3>
+<div class="time" id="la"></div>
+<div class="open">Session: 02:00 – 14:00</div>
+</div>
+
+<div class="city">
+<h3>London, UK</h3>
+<div class="time" id="london"></div>
+<div class="open">Session: 10:00 – 22:00</div>
+</div>
+
+<div class="city">
+<h3>Latvia</h3>
+<div class="time" id="latvia"></div>
+<div class="open">Session: 12:00 – 00:00</div>
+</div>
+
+<div class="city">
+<h3>Sydney, Australia</h3>
+<div class="time" id="sydney"></div>
+<div class="open">Session: 21:00 – 09:00</div>
+</div>
+
+<div class="city">
+<h3>Johannesburg, South Africa</h3>
+<div class="time" id="jhb"></div>
+<div class="open">Session: 12:00 – 00:00</div>
+</div>
+
+</div>
+
+<script>
+
+function updateClocks(){
+
+document.getElementById("madridClock").innerHTML =
+new Date().toLocaleTimeString("en-GB",{timeZone:"Europe/Madrid"});
+
+document.getElementById("nyc").innerHTML =
+new Date().toLocaleTimeString("en-US",{timeZone:"America/New_York"});
+
+document.getElementById("arizona").innerHTML =
+new Date().toLocaleTimeString("en-US",{timeZone:"America/Phoenix"});
+
+document.getElementById("la").innerHTML =
+new Date().toLocaleTimeString("en-US",{timeZone:"America/Los_Angeles"});
+
+document.getElementById("london").innerHTML =
+new Date().toLocaleTimeString("en-GB",{timeZone:"Europe/London"});
+
+document.getElementById("latvia").innerHTML =
+new Date().toLocaleTimeString("en-GB",{timeZone:"Europe/Riga"});
+
+document.getElementById("sydney").innerHTML =
+new Date().toLocaleTimeString("en-AU",{timeZone:"Australia/Sydney"});
+
+document.getElementById("jhb").innerHTML =
+new Date().toLocaleTimeString("en-ZA",{timeZone:"Africa/Johannesburg"});
+
+}
+
+setInterval(updateClocks,1000);
+updateClocks();
+
+
+
+</script>
+
+<p><a href="payen.html"><img src="pay.png">
+</a>
+  <a href="mailto:dianalifecoaching1@gmail.com" class="app-icon">
+        <img src="BookSession.png" alt="Email Icon">
+    </a></p>
+<p><a href="en.html"><img src="home.png">
+</a></p>
+
+</body>
+</html>
