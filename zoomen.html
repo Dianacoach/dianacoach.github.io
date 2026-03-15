@@ -133,14 +133,13 @@ opacity:0.9;
 
 <br><br>
 
-<button onclick="goToZoom()">CLICK TO CONTINUE</button>
-
-<br><br>
-
+<a href="#" onclick="goToZoom(); return false;">
 <img src="golden.png" alt="golden">
+</a>
 
 <script>
 function goToZoom() {
+
     var id = document.getElementById("meetingID").value;
 
     if (/^\d{11}$/.test(id)) {
@@ -148,6 +147,7 @@ function goToZoom() {
     } else {
         alert("Please enter exactly 11 numbers.");
     }
+
 }
 </script>
 
