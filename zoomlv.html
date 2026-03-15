@@ -128,9 +128,29 @@ opacity:0.9;
 
 </div>
 
-<p><a href="https://zoom.us/j/3746352326">
- <img src="goldlv.png" alt="goldlv">
-</a></p>
+<p>Ievadiet šeit sapulces ID #:</p>
+
+<input type="text" id="meetingID" maxlength="11" pattern="\d{11}" style="width:140px;" placeholder="11 digits">
+
+<br><br>
+
+<a href="#" onclick="goToZoom(); return false;">
+<img src="golden.png" alt="golden">
+</a>
+
+<script>
+function goToZoom() {
+
+    var id = document.getElementById("meetingID").value;
+
+    if (/^\d{11}$/.test(id)) {
+        window.location.href = "https://zoom.us/j/" + id;
+    } else {
+        alert("Lūdzu, ievadiet tieši 11 ciparus.");
+    }
+
+}
+</script>
  
 
 <div class="note" style="font-size: 20px;">
