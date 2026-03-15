@@ -127,9 +127,29 @@ opacity:0.9;
 
 </div>
 
-<p><a href="https://zoom.us/j/86759190607">
- <img src="golden.png" alt="golden">
-</a></p>
+<p>Introduce here the Meeting ID#:</p>
+
+<input type="text" id="meetingID" maxlength="11" pattern="\d{11}" style="width:140px;" placeholder="11 digits">
+
+<br><br>
+
+<button onclick="goToZoom()">CLICK TO CONTINUE</button>
+
+<br><br>
+
+<img src="golden.png" alt="golden">
+
+<script>
+function goToZoom() {
+    var id = document.getElementById("meetingID").value;
+
+    if (/^\d{11}$/.test(id)) {
+        window.location.href = "https://zoom.us/j/" + id;
+    } else {
+        alert("Please enter exactly 11 numbers.");
+    }
+}
+</script>
 
 <div class="note" style="font-size: 20px;">
 If you have difficulties connecting, please contact me using the MAIL or WHATSAPP icons above.
