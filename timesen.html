@@ -1,215 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diana Life Coaching</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session Times Worldwide | Diana Life Coaching</title>
+  <meta name="description" content="Check coaching session times in Madrid, New York, London, Latvia, Los Angeles, Arizona, Sydney, and Johannesburg.">
   <link rel="stylesheet" href="css/style.css">
-  
-<title>International Coaching Times</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-
-body{
-font-family: Arial, sans-serif;
-background:#2e5f4d;
-background-image:url("back8.jpg");
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-color:white;
-text-align:center;
-margin:0;
-padding:30px;
-}
-
-/* subtle dark overlay for readability */
-
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.35);
-z-index:-1;
-}
-
-h1{
-font-size:36px;
-margin-bottom:10px;
-}
-
-.subtitle{
-font-size:18px;
-margin-bottom:40px;
-opacity:0.9;
-}
-
-/* Madrid main box */
-
-.madrid-box{
-background:#d4af37;
-color:#2e5f4d;
-padding:30px;
-border-radius:12px;
-max-width:500px;
-margin:auto;
-margin-bottom:40px;
-}
-
-.madrid-time{
-font-size:40px;
-font-weight:bold;
-margin-top:10px;
-}
-
-/* Grid */
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-max-width:1000px;
-margin:auto;
-}
-
-.city{
-background:white;
-color:#2e5f4d;
-padding:20px;
-border-radius:10px;
-}
-
-.city h3{
-margin:0;
-font-size:20px;
-}
-
-.time{
-font-size:28px;
-margin-top:10px;
-font-weight:bold;
-}
-
-.open{
-margin-top:10px;
-font-size:14px;
-opacity:0.8;
-}
-
-</style>
 </head>
-
 <body>
 
-<h1>International Coaching Times</h1>
-<div class="subtitle">Available Session Windows</div>
- 
- <h2> NOT to make mistakes in correct time, please go by time in Madrid, Spain (My Local Coaching Time)</h2>
+  <div class="page-shell">
+    <section class="hero small-hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Session Availability</p>
+        <h1>International Coaching Times</h1>
+        <p class="hero-subtext">To avoid mistakes, please always follow Madrid, Spain time as the main reference.</p>
+      </div>
+    </section>
 
-<div class="madrid-box">
-<h2>Madrid, Spain (Local Coaching Time)</h2>
-<div class="madrid-time" id="madridClock"></div>
-<div>Coaching Session Time: <b>11:00 – 23:00</b></div>
-</div>
+    <main class="content-section">
+      <div class="time-highlight">
+        <h2>Madrid, Spain (Local Coaching Time)</h2>
+        <div class="madrid-time" id="madridClock"></div>
+        <p>Available session window: <strong>11:00 – 23:00</strong></p>
+      </div>
 
-<div class="grid">
+      <div class="time-grid">
+        <div class="time-card">
+          <h3>New York, USA</h3>
+          <div class="time-value" id="nyc"></div>
+          <p>Session time: 05:00 – 17:00</p>
+        </div>
 
-<div class="city">
-<h3>New York, USA</h3>
-<div class="time" id="nyc"></div>
-<div class="open">Coaching Session Time:<P> 05:00 – 17:00 </P></div>
-</div>
+        <div class="time-card">
+          <h3>Arizona, USA</h3>
+          <div class="time-value" id="arizona"></div>
+          <p>Session time: 04:00 – 16:00</p>
+        </div>
 
-<div class="city">
-<h3>Arizona, USA</h3>
-<div class="time" id="arizona"></div>
-<div class="open">Coaching Session Time:<P> 04:00 – 16:00</P></div>
-</div>
+        <div class="time-card">
+          <h3>Los Angeles, USA</h3>
+          <div class="time-value" id="la"></div>
+          <p>Session time: 02:00 – 14:00</p>
+        </div>
 
-<div class="city">
-<h3>Los Angeles, USA</h3>
-<div class="time" id="la"></div>
-<div class="open">Coaching Session Time:<P> 02:00 – 14:00</P></div>
-</div>
+        <div class="time-card">
+          <h3>London, UK</h3>
+          <div class="time-value" id="london"></div>
+          <p>Session time: 10:00 – 22:00</p>
+        </div>
 
-<div class="city">
-<h3>London, UK</h3>
-<div class="time" id="london"></div>
-<div class="open">Coaching Session Time:<P> 10:00 – 22:00</P></div>
-</div>
+        <div class="time-card">
+          <h3>Latvia</h3>
+          <div class="time-value" id="latvia"></div>
+          <p>Session time: 12:00 – 00:00</p>
+        </div>
 
-<div class="city">
-<h3>Latvia</h3>
-<div class="time" id="latvia"></div>
-<div class="open">Coaching Session Time:<P> 12:00 – 00:00</P></div>
-</div>
+        <div class="time-card">
+          <h3>Sydney, Australia</h3>
+          <div class="time-value" id="sydney"></div>
+          <p>Session time: 21:00 – 09:00</p>
+        </div>
 
-<div class="city">
-<h3>Sydney, Australia</h3>
-<div class="time" id="sydney"></div>
-<div class="open">Coaching Session Time:<P> 21:00 – 09:00</P></div>
-</div>
+        <div class="time-card">
+          <h3>Johannesburg, South Africa</h3>
+          <div class="time-value" id="jhb"></div>
+          <p>Session time: 12:00 – 00:00</p>
+        </div>
+      </div>
 
-<div class="city">
-<h3>Johannesburg, South Africa</h3>
-<div class="time" id="jhb"></div>
-<div class="open">Coaching Session Time:<P> 12:00 – 00:00</P></div>
-</div>
+      <div class="center-stack">
+        <a href="payen.html" class="soft-button">Go to Payment</a>
+        <a href="mailto:dianalifecoaching1@gmail.com" class="soft-button secondary-button">Book by Email</a>
+      </div>
 
-</div>
+      <div class="back-home">
+        <a href="en.html"><img src="home.png" alt="Return to English home page"></a>
+      </div>
+    </main>
+  </div>
 
-<script>
+  <script>
+    function updateClocks() {
+      document.getElementById("madridClock").innerHTML =
+        new Date().toLocaleTimeString("en-GB", { timeZone: "Europe/Madrid" });
 
-function updateClocks(){
+      document.getElementById("nyc").innerHTML =
+        new Date().toLocaleTimeString("en-US", { timeZone: "America/New_York" });
 
-document.getElementById("madridClock").innerHTML =
-new Date().toLocaleTimeString("en-GB",{timeZone:"Europe/Madrid"});
+      document.getElementById("arizona").innerHTML =
+        new Date().toLocaleTimeString("en-US", { timeZone: "America/Phoenix" });
 
-document.getElementById("nyc").innerHTML =
-new Date().toLocaleTimeString("en-US",{timeZone:"America/New_York"});
+      document.getElementById("la").innerHTML =
+        new Date().toLocaleTimeString("en-US", { timeZone: "America/Los_Angeles" });
 
-document.getElementById("arizona").innerHTML =
-new Date().toLocaleTimeString("en-US",{timeZone:"America/Phoenix"});
+      document.getElementById("london").innerHTML =
+        new Date().toLocaleTimeString("en-GB", { timeZone: "Europe/London" });
 
-document.getElementById("la").innerHTML =
-new Date().toLocaleTimeString("en-US",{timeZone:"America/Los_Angeles"});
+      document.getElementById("latvia").innerHTML =
+        new Date().toLocaleTimeString("en-GB", { timeZone: "Europe/Riga" });
 
-document.getElementById("london").innerHTML =
-new Date().toLocaleTimeString("en-GB",{timeZone:"Europe/London"});
+      document.getElementById("sydney").innerHTML =
+        new Date().toLocaleTimeString("en-AU", { timeZone: "Australia/Sydney" });
 
-document.getElementById("latvia").innerHTML =
-new Date().toLocaleTimeString("en-GB",{timeZone:"Europe/Riga"});
+      document.getElementById("jhb").innerHTML =
+        new Date().toLocaleTimeString("en-ZA", { timeZone: "Africa/Johannesburg" });
+    }
 
-document.getElementById("sydney").innerHTML =
-new Date().toLocaleTimeString("en-AU",{timeZone:"Australia/Sydney"});
-
-document.getElementById("jhb").innerHTML =
-new Date().toLocaleTimeString("en-ZA",{timeZone:"Africa/Johannesburg"});
-
-}
-
-setInterval(updateClocks,1000);
-updateClocks();
-
-
-
-</script>
-
-<p><a href="payen.html"><img src="payen.png">
-</a>
-  <a href="mailto:dianalifecoaching1@gmail.com" class="app-icon">
-        <img src="BookSession.png" alt="Email Icon">
-    </a></p>
-<p><a href="en.html"><img src="home.png">
-</a></p>
+    setInterval(updateClocks, 1000);
+    updateClocks();
+  </script>
 
 </body>
-
 </html>
-
-
