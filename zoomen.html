@@ -1,174 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diana Life Coaching</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Your Zoom Coaching Session | Diana Life Coaching</title>
+  <meta name="description" content="Join your online Zoom coaching session by entering your 11-digit meeting ID and following the steps provided.">
   <link rel="stylesheet" href="css/style.css">
-  
-<title>Join Your Coaching Session</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-
-
-
-body{
-margin:0;
-font-family:'Lato',sans-serif;
-background: url('back8.jpg') no-repeat center center fixed;
-background-size: cover;
-color:white;
-text-align:center;
-}
-
-
-.container{
-max-width:700px;
-margin:auto;
-padding:40px 20px;
-}
-
-h1{
-font-size:34px;
-margin-bottom:10px;
-}
-
-h2{
-font-weight:400;
-margin-bottom:30px;
-}
-
-.steps{
-text-align:left;
-background:rgba(255,255,255,0.1);
-padding:25px;
-border-radius:10px;
-line-height:1.7;
-font-size:18px;
-}
-
-.step{
-margin-bottom:15px;
-}
-
-.icons{
-margin-top:30px;
-display:flex;
-justify-content:center;
-gap:40px;
-}
-
-.icons img{
-width:70px;
-cursor:pointer;
-transition:0.3s;
-}
-
-.icons img:hover{
-transform:scale(1.1);
-}
-
-.join-button{
-display:inline-block;
-margin-top:40px;
-padding:18px 40px;
-font-size:22px;
-background:#d4af37;
-color:black;
-text-decoration:none;
-border-radius:8px;
-font-weight:600;
-}
-
-.join-button:hover{
-background:#e6c45a;
-}
-
-.note{
-margin-top:25px;
-font-size:15px;
-opacity:0.9;
-}
-
-</style>
 </head>
-
 <body>
 
-<div class="container">
+  <div class="page-shell">
+    <section class="hero small-hero">
+      <div class="overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Zoom Access</p>
+        <h1>Your Live Coaching Session</h1>
+        <p class="hero-subtext">Install Zoom on your device and follow the simple steps below.</p>
+      </div>
+    </section>
 
-<h1>Your Live Coaching Session</h1>
-<P><h2> Install ZOOM in your device and follow these simple steps</h2></P>
+    <main class="content-section narrow-content">
+      <div class="glass-card">
+        <ol class="styled-steps">
+          <li>Keep your <strong>Meeting ID</strong> and <strong>Passcode</strong> ready from the email you received.</li>
+          <li>Enter the <strong>11-digit Meeting ID</strong> below.</li>
+          <li>Click the gold button to open your Zoom session.</li>
+          <li>When Zoom opens, enter the <strong>Passcode</strong> provided to you.</li>
+          <li>Allow microphone access if Zoom requests permission.</li>
+          <li>Please wait a moment until your coach joins the session.</li>
+        </ol>
 
-<div class="steps">
+        <div class="icon-links">
+          <a href="mailto:dianalifecoaching1@gmail.com"><img src="mail.png" alt="Email Diana"></a>
+          <a href="https://wa.me/34644810639" target="_blank"><img src="whatsapp.png" alt="WhatsApp Diana"></a>
+        </div>
 
-<div class="step">1️⃣ Have available next to you the MEETING ID# and PASSCODE provided to you by email.</div>
+        <p class="input-label">Enter your Meeting ID:</p>
+        <input type="text" id="meetingID" maxlength="11" pattern="\d{11}" class="zoom-input" placeholder="11 digits">
 
-<div class="step">2️⃣ Introduce MEETING ID#= 11 numbers provided.</div>
+        <div class="center-stack">
+          <a href="#" onclick="goToZoom(); return false;">
+            <img src="golden.png" alt="Join Zoom Session">
+          </a>
+        </div>
 
-<div class="step">3️⃣ Click the <b>gold button below</b> that says <b>"Join Zoom Session"</b>.</div>
+        <p class="support-note">
+          If you have difficulty connecting, please contact me using the email or WhatsApp icons above.
+        </p>
+      </div>
 
-<div class="step">4️⃣ When Zoom opens, will ask you for PASS CODE= (6 digits) provided and click ENTER.</div>
+      <div class="back-home">
+        <a href="en.html"><img src="home.png" alt="Return to English home page"></a>
+      </div>
+    </main>
+  </div>
 
-<div class="step">5️⃣ Agree to permission requests that ZOOM asks such as allow microphone access (so we can speak).</div>
-
-<div class="step">6️⃣ Please wait a moment until your coach joins the session.</div>
-
-</div>
-
-<div class="icons">
-
-<a href="mailto:dianalifecoaching1@gmail.com">
-<img src="mail.png" alt="Email">
-</a>
-
-<a href="https://wa.me/34644810639">
-<img src="whatsapp.png" alt="WhatsApp">
-</a>
-
-</div>
-
-<p>Introduce here the Meeting ID#:</p>
-
-<input type="text" id="meetingID" maxlength="11" pattern="\d{11}" style="width:140px;" placeholder="11 digits">
-
-<br><br>
-
-<a href="#" onclick="goToZoom(); return false;">
-<img src="golden.png" alt="golden">
-</a>
-
-<script>
-function goToZoom() {
-
-    var id = document.getElementById("meetingID").value;
-
-    if (/^\d{11}$/.test(id)) {
+  <script>
+    function goToZoom() {
+      var id = document.getElementById("meetingID").value;
+      if (/^\d{11}$/.test(id)) {
         window.location.href = "https://zoom.us/j/" + id;
-    } else {
+      } else {
         alert("Please enter exactly 11 numbers.");
+      }
     }
-
-}
-</script>
-
-<div class="note" style="font-size: 20px;">
-If you have difficulties connecting, please contact me using the MAIL or WHATSAPP icons above.
-
-</div>
-
-</div>
-
-<p><a href="en.html"><img src="home.png">
-</a></p>
+  </script>
 
 </body>
-
 </html>
-
 
 
 
