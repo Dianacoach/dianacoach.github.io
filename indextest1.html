@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Diana Bautista | International Coaching</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-image: url('back2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-image: url('back1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+header img, header h1 {
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    width: 220px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8em;
+    margin: 0;
+}
+
+.language-section {
+    text-align: center;
+    padding: 80px 20px;
+    background: rgba(0,0,0,0.65);
+}
+
+.language-option {
+    margin: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.language-option img {
+    width: 70px;
+    display: block;
+    margin: 0 auto 10px;
+    transition: 0.3s ease;
+}
+
+.language-option img:hover {
+    transform: scale(1.15);
+}
+
+.language-option a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.language-option p {
+    font-size: 0.9em;
+    opacity: 0.85;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="diana.jpg" alt="Diana Bautista">
+    <h1>Diana Bautista</h1>
+</header>
+
+<section class="language-section">
+
+    <div class="language-option">
+        <a href="en.html">
+            <img src="us.png" alt="English">
+            English
+        </a>
+        <p>Life & Love Coaching</p>
+    </div>
+
+    <div class="language-option">
+        <a href="lv.html">
+            <img src="latvia.png" alt="Latviešu">
+            Latviešu
+        </a>
+        <p>Dzīves un attiecību koučings</p>
+    </div>
+
+    <div class="language-option">
+        <a href="ru.html">
+            <img src="russia.png" alt="Русский">
+            Русский
+        </a>
+        <p>Коучинг по жизни и отношениям</p>
+    </div>
+
+</section>
+
+</body>
+</html>
