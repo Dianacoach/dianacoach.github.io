@@ -4,16 +4,16 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Optimized SEO Title -->
 <title>Online Life Coach – Confidence & Personal Growth | Diana Life Coaching</title>
-
-<!-- Meta description for Google search results -->
 <meta name="description" content="Top online life coaching worldwide under $50. Gain confidence, clarity, and personal growth with Diana Bautista's personalized Zoom sessions.">
 
-<link rel="stylesheet" href="css/style.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
@@ -21,129 +21,191 @@ body {
     background-image: url('back8.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-header {
-    background-image: url('back8.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 120px 20px;
+.main-wrapper {
+    min-height: 100vh;
+    padding: 40px 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-title {
     text-align: center;
-    position: relative;
+    margin-bottom: 40px;
 }
 
-header::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.55);
-}
-
-header img, header h1, header p {
-    position: relative;
-    z-index: 1;
-}
-
-header img {
-    width: 300px;
-    border-radius: 16px;
-    margin-bottom: 20px;
-}
-
-header h1 {
+.top-title h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.8em;
-    margin: 0 0 20px 0;
+    font-size: 2.7rem;
+    margin: 0;
+    text-shadow: 1px 1px 8px rgba(0,0,0,0.45);
 }
 
-header p {
-    font-size: 1.2em;
-    max-width: 700px;
+.content-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1400px;
     margin: 0 auto;
-    line-height: 1.5em;
+    flex-wrap: wrap;
 }
 
-.language-section {
+.text-block {
+    flex: 1;
+    min-width: 300px;
+    max-width: 420px;
     text-align: center;
-    padding: 80px 20px;
-    background: rgba(0,0,0,0.65);
+    padding: 20px;
 }
 
-.language-option {
-    margin: 30px;
-    display: inline-block;
-    text-align: center;
+.text-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
 
-.language-option img {
+.text-block p {
+    font-size: 1.08rem;
+    line-height: 1.8;
+    margin-bottom: 18px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
+}
+
+.flag-box {
+    margin-top: 25px;
+}
+
+.flag-box img {
     width: 70px;
+    height: auto;
     display: block;
     margin: 0 auto 10px;
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
-.language-option img:hover {
-    transform: scale(1.15);
+.flag-box img:hover {
+    transform: scale(1.08);
 }
 
-.language-option a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
+.flag-box span {
+    font-size: 1.1rem;
     font-weight: 600;
+    display: block;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.4);
 }
 
-.language-option p {
-    font-size: 0.9em;
-    opacity: 0.85;
+.center-image {
+    flex: 0 1 340px;
+    text-align: center;
+}
+
+.center-image img {
+    width: 100%;
+    max-width: 340px;
+    border-radius: 18px;
+    box-shadow: 0 8px 28px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 900px) {
+    .content-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .center-image {
+        order: 1;
+    }
+
+    .english-block {
+        order: 2;
+    }
+
+    .latvian-block {
+        order: 3;
+    }
+
+    .top-title h1 {
+        font-size: 2rem;
+    }
+
+    .text-block h2 {
+        font-size: 1.5rem;
+    }
+
+    .text-block p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    body {
+        background-attachment: scroll;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-    <!-- Optimized H1 for keywords -->
-    <h1>Online Life Coaching – Confidence & Personal Growth Worldwide</h1>
+<div class="main-wrapper">
 
-    <!-- Optimized alt text -->
-    <img src="Diana.jpg" alt="Diana Bautista - Online Life Coach">
-
-    
-   <h2> <p> I offer online life coaching sessions worldwide to help you gain clarity, confidence and direction.
-            Through personalized Zoom sessions I help you overcome limiting beliefs, reduce anxiety, and create a 
-             clear path toward your goals.</p> <p>Enjoy a free 30-minute Live Video Coaching Session. If you find it valuable and decide to continue,
-           personalized 60-minute coaching sessions are available for only €35 or $40.</p></h2>
-
-<section class="language-section">
-    <div class="language-option">
-        <a href="en.html">
-            <img src="us.png" alt="English language coaching">
-            English
-        </a>
-        <p>Life and personal growth coaching</p>
+    <div class="top-title">
+        <h1>Online Life Coaching – Confidence & Personal Growth Worldwide</h1>
     </div>
-    
-    <h2><p>
-Es piedāvāju tiešsaistes dzīves koučinga sesijas cilvēkiem visā pasaulē, lai palīdzētu iegūt lielāku skaidrību,
-    pārliecību un virzību dzīvē. Personalizētās Zoom sesijās es palīdzu pārvarēt ierobežojošus uzskatus, mazināt
-    trauksmi un izveidot skaidru ceļu uz jūsu mērķiem.</p>
-<p>
-Izmantojiet bezmaksas 30 minūšu tiešraides video koučinga sesiju. Ja sesija jums šķiet vērtīga un vēlaties turpināt,
-    personalizētas koučinga sesijas ir pieejamas tikai par €35 vai $40 par katru sesiju.
-</p></h2>
- <div class="language-option">
-        <a href="lv.html">
-            <img src="latvia.png" alt="Latviešu valodas koučings">
-            Latviešu
-        </a>
-        <p>Dzīves un attiecību koučings</p>
+
+    <div class="content-row">
+
+        <!-- English Left -->
+        <div class="text-block english-block">
+            <h2>English</h2>
+            <p>
+                I offer online life coaching sessions worldwide to help you gain clarity, confidence and direction.
+                Through personalized Zoom sessions I help you overcome limiting beliefs, reduce anxiety, and create a
+                clear path toward your goals.
+            </p>
+            <p>
+                Enjoy a free 30-minute Live Video Coaching Session. If you find it valuable and decide to continue,
+                personalized 60-minute coaching sessions are available for only €35 or $40.
+            </p>
+
+            <div class="flag-box">
+                <img src="us.png" alt="English language coaching">
+                <span>English</span>
+            </div>
+        </div>
+
+        <!-- Center Picture -->
+        <div class="center-image">
+            <img src="Diana.jpg" alt="Diana Bautista - Online Life Coach">
+        </div>
+
+        <!-- Latvian Right -->
+        <div class="text-block latvian-block">
+            <h2>Latviešu</h2>
+            <p>
+                Es piedāvāju tiešsaistes dzīves koučinga sesijas cilvēkiem visā pasaulē, lai palīdzētu iegūt lielāku
+                skaidrību, pārliecību un virzību dzīvē. Personalizētās Zoom sesijās es palīdzu pārvarēt ierobežojošus
+                uzskatus, mazināt trauksmi un izveidot skaidru ceļu uz jūsu mērķiem.
+            </p>
+            <p>
+                Izmantojiet bezmaksas 30 minūšu tiešraides video koučinga sesiju. Ja sesija jums šķiet vērtīga un
+                vēlaties turpināt, personalizētas 60 minūšu koučinga sesijas ir pieejamas tikai par €35 vai $40 par katru sesiju.
+            </p>
+
+            <div class="flag-box">
+                <img src="latvia.png" alt="Latviešu valodas koučings">
+                <span>Latviešu</span>
+            </div>
+        </div>
+
     </div>
-    
-</header>
+</div>
 
 </body>
-
 </html>
 
