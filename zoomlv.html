@@ -1,72 +1,170 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pievienoties Zoom Sesijai | Diana Life Coaching</title>
-  <meta name="description" content="Pievienojieties savai Zoom koučinga sesijai, ievadot 11 ciparu sapulces ID un sekojot vienkāršajiem soļiem.">
+<meta charset="UTF-8">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diana Life Coaching</title>
   <link rel="stylesheet" href="css/style.css">
+  
+<title>Pievienoties Sesijai</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+font-family:'Lato',sans-serif;
+background: url('back8.jpg') no-repeat center center fixed;
+background-size: cover;
+color:white;
+text-align:center;
+}
+ 
+.container{
+max-width:700px;
+margin:auto;
+padding:40px 20px;
+}
+
+h1{
+font-size:34px;
+margin-bottom:10px;
+}
+
+h2{
+font-weight:400;
+margin-bottom:30px;
+}
+
+.steps{
+text-align:left;
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:10px;
+line-height:1.7;
+font-size:18px;
+}
+
+.step{
+margin-bottom:15px;
+}
+
+.icons{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:40px;
+}
+
+.icons img{
+width:70px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.icons img:hover{
+transform:scale(1.1);
+}
+
+.join-button{
+display:inline-block;
+margin-top:40px;
+padding:18px 40px;
+font-size:22px;
+background:#d4af37;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:600;
+}
+
+.join-button:hover{
+background:#e6c45a;
+}
+
+.note{
+margin-top:25px;
+font-size:15px;
+opacity:0.9;
+}
+
+</style>
 </head>
+
 <body>
 
-  <div class="page-shell">
-    <section class="hero small-hero">
-      <div class="overlay"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Zoom Piekļuve</p>
-        <h1>Tava Tiešsaistes Sesija</h1>
-        <p class="hero-subtext">Instalējiet Zoom savā ierīcē un izpildiet zemāk norādītās vienkāršās darbības.</p>
-      </div>
-    </section>
+<div class="container">
 
-    <main class="content-section narrow-content">
-      <div class="glass-card">
-        <ol class="styled-steps">
-          <li>Sagatavojiet savu <strong>Meeting ID</strong> un <strong>Passcode</strong>, ko saņēmāt e-pastā.</li>
-          <li>Ievadiet zemāk savu <strong>11 ciparu Meeting ID</strong>.</li>
-          <li>Nospiediet zelta pogu, lai atvērtu savu Zoom sesiju.</li>
-          <li>Kad Zoom atvērsies, ievadiet jums nosūtīto <strong>Passcode</strong>.</li>
-          <li>Ja Zoom pieprasa atļauju mikrofonam, lūdzu, piekrītiet.</li>
-          <li>Lūdzu, uzgaidiet īsu brīdi, līdz jūsu koučs pievienojas sesijai.</li>
-        </ol>
+<h1>Tava tiešsaistes sesija</h1>
+<P><h2> Instalējiet ZOOM savā ierīcē un izpildiet šīs vienkāršās darbības</h2></P>
 
-        <div class="icon-links">
-          <a href="mailto:dianalifecoaching1@gmail.com"><img src="mail.png" alt="E-pasts Diānai"></a>
-          <a href="https://wa.me/34644810639" target="_blank"><img src="whatsapp.png" alt="WhatsApp Diānai"></a>
-        </div>
+<div class="steps">
 
-        <p class="input-label">Ievadiet savu Meeting ID:</p>
-        <input type="text" id="meetingID" maxlength="11" pattern="\d{11}" class="zoom-input" placeholder="11 cipari">
+<div class="step">1️⃣ Sagatavojiet sev blakus "MEETING ID#" un "PASSCODE", kas jums tika nosūtīti pa e-pastu.     </div>
 
-        <div class="center-stack">
-          <a href="#" onclick="goToZoom(); return false;">
-            <img src="golden.png" alt="Pievienoties Zoom Sesijai">
-          </a>
-        </div>
+<div class="step">2️⃣ Iepazīstieties ar sniegtajiem SAPULCE ID = 11 numuriem.</div>
 
-        <p class="support-note">
-          Ja rodas grūtības pieslēgties, lūdzu, sazinieties ar mani, izmantojot e-pastu vai WhatsApp ikonas augstāk.
-        </p>
-      </div>
+<div class="step">3️⃣ Noklikšķiniet uz <b>zelta pogas zemāk</b> ar uzrakstu <b>"Pievienoties Zoom sesijai"</b>.</div>
 
-      <div class="back-home">
-        <a href="lv.html"><img src="home.png" alt="Atgriezties uz latviešu sākumlapu"></a>
-      </div>
-    </main>
-  </div>
+<div class="step">4️⃣ Kad Zoom atvērsies, jums tiks lūgts ievadīt "PASSCODE": (6 burti un cipari), un noklikšķiniet uz Enter.</div>
 
-  <script>
-    function goToZoom() {
-      var id = document.getElementById("meetingID").value;
-      if (/^\d{11}$/.test(id)) {
+<div class="step">5️⃣ Piekrītiet ZOOM pieprasītajām atļaujām, piemēram, atļaut piekļuvi mikrofonam (lai mēs varētu runāt).</div>
+ 
+<div class="step">6️⃣ Lūdzu, uzgaidiet brīdi, līdz jūsu treneris pievienosies sesijai.</div>
+
+</div>
+
+<div class="icons">
+
+
+<a href="mailto:dianalifecoaching1@gmail.com">
+<img src="mail.png" alt="E-pasts">
+</a>
+
+<a href="https://wa.me/34644810639">
+<img src="whatsapp.png" alt="whatsapp">
+</a>
+
+</div>
+
+<p>Ievadiet šeit sapulces ID #:</p>
+
+<input type="text" id="meetingID" maxlength="11" pattern="\d{11}" style="width:140px;" placeholder="11 digits">
+
+<br><br>
+
+<a href="#" onclick="goToZoom(); return false;">
+<img src="golden.png" alt="golden">
+</a>
+
+<script>
+function goToZoom() {
+
+    var id = document.getElementById("meetingID").value;
+
+    if (/^\d{11}$/.test(id)) {
         window.location.href = "https://zoom.us/j/" + id;
-      } else {
+    } else {
         alert("Lūdzu, ievadiet tieši 11 ciparus.");
-      }
     }
-  </script>
+
+}
+</script>
+ 
+
+<div class="note" style="font-size: 20px;">
+Ja jums rodas grūtības pieslēgties, lūdzu, sazinieties ar mani, izmantojot augstāk redzamās e-pasta vai WhatsApp ikonas.
+</div>
+
+</div>
+
+<p><a href="lv.html"><img src="home.png">
+</a></p>
 
 </body>
+
 </html>
 
 
