@@ -7,7 +7,7 @@
     --text-dark: #2d3a33;
     --white: #ffffff;
     --overlay: rgba(24, 34, 29, 0.72);
-    --card: rgba(255, 255, 255, 0.92);
+    --card: rgba(255, 255, 255, 0.10);
     --shadow: 0 10px 30px rgba(0,0,0,0.18);
     --radius: 18px;
     --transition: all 0.3s ease;
@@ -151,20 +151,24 @@ img {
     padding: 80px 0;
 }
 
+/* REMOVED LIGHT PINK / CREAM BACKGROUND */
 .section-light {
-    background: rgba(247,243,236,0.95);
-    color: var(--text-dark);
+    background: transparent;
+    color: var(--white);
 }
 
+/* KEEP SOFT GLASS EFFECT BUT NO PINK */
 .section-soft {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.04);
     backdrop-filter: blur(3px);
+    color: var(--white);
 }
 
 .section h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 20px;
     text-align: center;
+    color: var(--white);
 }
 
 .section-sub {
@@ -172,6 +176,7 @@ img {
     max-width: 800px;
     margin: 0 auto 40px;
     opacity: 0.92;
+    color: var(--white);
 }
 
 .grid-3 {
@@ -186,16 +191,19 @@ img {
     gap: 24px;
 }
 
+/* CARDS NOW TRANSPARENT / GLASSY */
 .card {
-    background: var(--card);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
     border-radius: var(--radius);
-    padding: 28px;
+    padding: 24px;
     box-shadow: var(--shadow);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.08);
 }
 
 .card h3 {
-    color: var(--deep-forest);
+    color: var(--white);
     font-size: 1.4rem;
     margin-bottom: 12px;
 }
@@ -217,7 +225,8 @@ ul.clean-list {
 
 ul.clean-list li {
     padding: 10px 0;
-    border-bottom: 1px solid rgba(79,111,93,0.12);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    color: var(--white);
 }
 
 ul.clean-list li:last-child {
@@ -225,29 +234,35 @@ ul.clean-list li:last-child {
 }
 
 .testimonial {
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.08);
     border-left: 4px solid var(--soft-gold);
-    padding: 24px;
+    padding: 22px;
     border-radius: 16px;
     color: var(--cream);
+    backdrop-filter: blur(4px);
 }
 
+/* SMALLER CONTACT GRID */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 18px;
+    gap: 14px;
     margin-top: 30px;
 }
 
+/* SMALLER CONTACT BOXES */
 .contact-box {
-    background: var(--card);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
     text-align: center;
-    padding: 24px;
-    border-radius: var(--radius);
+    padding: 16px;
+    border-radius: 16px;
     text-decoration: none;
     box-shadow: var(--shadow);
     transition: var(--transition);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.08);
+    min-height: 170px;
 }
 
 .contact-box:hover {
@@ -255,33 +270,61 @@ ul.clean-list li:last-child {
 }
 
 .contact-box img {
-    width: 54px;
-    margin-bottom: 14px;
+    width: 40px;
+    margin-bottom: 10px;
 }
 
+.contact-box h3 {
+    color: var(--white);
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+.contact-box p {
+    color: var(--white);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* SEND MESSAGE BOX SMALLER */
 .form-card {
-    background: rgba(255,255,255,0.96);
-    color: var(--text-dark);
-    border-radius: 24px;
-    padding: 36px;
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
+    border-radius: 22px;
+    padding: 24px;
     box-shadow: var(--shadow);
-    max-width: 800px;
+    max-width: 480px;
     margin: 40px auto 0;
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.form-card h3,
+.form-card p,
+.form-card label {
+    color: var(--white);
 }
 
 input, textarea {
     width: 100%;
-    padding: 15px 16px;
+    padding: 13px 14px;
     border-radius: 12px;
-    border: 1px solid #d5ddd7;
+    border: 1px solid rgba(255,255,255,0.18);
     margin-top: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     font-size: 1rem;
     font-family: inherit;
+    background: rgba(255,255,255,0.10);
+    color: var(--white);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgba(255,255,255,0.75);
 }
 
 textarea {
-    min-height: 200px;
+    min-height: 120px;
     resize: vertical;
 }
 
@@ -289,7 +332,7 @@ button {
     background: var(--soft-gold);
     color: #1f271f;
     border: none;
-    padding: 15px 28px;
+    padding: 13px 24px;
     border-radius: 999px;
     font-size: 1rem;
     font-weight: 700;
@@ -327,6 +370,7 @@ button:hover {
     padding: 40px 20px 60px;
     font-size: 0.95rem;
     opacity: 0.92;
+    color: var(--white);
 }
 
 .language-wrap {
@@ -355,13 +399,14 @@ button:hover {
 }
 
 .lang-box {
-    background: rgba(255,255,255,0.92);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.12);
+    color: var(--white);
     padding: 30px;
     border-radius: 24px;
     text-decoration: none;
     transition: var(--transition);
     box-shadow: var(--shadow);
+    backdrop-filter: blur(6px);
 }
 
 .lang-box:hover {
@@ -383,13 +428,14 @@ button:hover {
 }
 
 .page-card {
-    background: rgba(255,255,255,0.94);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
     border-radius: 24px;
     padding: 36px;
     box-shadow: var(--shadow);
     max-width: 950px;
     margin: 0 auto 60px;
+    backdrop-filter: blur(6px);
 }
 
 .payment-row {
@@ -401,8 +447,8 @@ button:hover {
 }
 
 .payment-box {
-    background: var(--card);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.08);
+    color: var(--white);
     border-radius: 20px;
     padding: 24px;
     width: min(320px, 100%);
@@ -410,6 +456,7 @@ button:hover {
     text-decoration: none;
     transition: var(--transition);
     text-align: center;
+    backdrop-filter: blur(6px);
 }
 
 .payment-box:hover {
@@ -450,5 +497,13 @@ button:hover {
 
     .section {
         padding: 60px 0;
+    }
+
+    .contact-box {
+        min-height: auto;
+    }
+
+    .form-card {
+        max-width: 100%;
     }
 }
