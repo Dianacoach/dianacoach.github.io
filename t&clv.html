@@ -2,166 +2,272 @@
 <html lang="lv">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Diana Life Coaching</title>
-  <link rel="stylesheet" href="css/style.css">
-  
-<title>Noteikumi un nosacījumi | Dzīves koučings</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Noteikumi un nosacījumi | Starptautiskais dzīves koučings</title>
+<meta name="description" content="Diana Bautista starptautiskā dzīves koučinga sesiju noteikumi un nosacījumi. Informācija par maksājumiem, rezervēšanu, atmaksu, konfidencialitāti un koučinga politiku.">
+
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Elegant Line Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
-body{
-margin:0;
-font-family: Arial, Helvetica, sans-serif;
-background-image:url("back8.jpg");
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
-color:white;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("back8.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
 }
 
-.overlay{
-background:rgba(0,0,0,0.65);
-min-height:100vh;
-padding:40px 20px;
+.overlay {
+    background: rgba(0, 0, 0, 0.58);
+    min-height: 100vh;
+    padding: 50px 20px;
 }
 
-.container{
-max-width:850px;
-margin:auto;
+.container {
+    max-width: 1200px;
+    margin: auto;
 }
 
-h1{
-text-align:center;
-font-size:34px;
-margin-bottom:30px;
+h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
 }
 
-.section{
-margin-bottom:28px;
+.intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 45px auto;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #f1f1f1;
 }
 
-h2{
-font-size:20px;
-color:#9fe3c2;
+/* GRID FOR CARDS */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
 }
 
-p{
-line-height:1.6;
-font-size:16px;
+/* CARD STYLE */
+.section {
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 18px;
+    padding: 28px 24px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.icon{
-margin-right:8px;
+.section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
 }
 
-.footer{
-margin-top:50px;
-text-align:center;
-font-size:13px;
-color:#cccccc;
+h2 {
+    font-size: 21px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
 }
 
-.return{
-text-align:center;
-margin-top:40px;
+p {
+    line-height: 1.75;
+    font-size: 15.8px;
+    color: #f5f5f5;
+    margin-bottom: 14px;
 }
 
-.return img{
-cursor:pointer;
+.icon {
+    font-size: 18px;
+    color: #e6d8b8;
+    min-width: 22px;
 }
 
+.footer {
+    margin-top: 55px;
+    text-align: center;
+    font-size: 13px;
+    color: #dddddd;
+    letter-spacing: 0.4px;
+}
+
+.return {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.return a {
+    display: inline-block;
+    background: rgba(255,255,255,0.12);
+    padding: 14px 18px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.20);
+    transition: all 0.25s ease;
+}
+
+.return a:hover {
+    background: rgba(255,255,255,0.20);
+    transform: translateY(-2px);
+}
+
+.return img {
+    width: 34px;
+    height: auto;
+    display: block;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .intro {
+        font-size: 16px;
+        margin-bottom: 35px;
+    }
+
+    .section {
+        padding: 24px 20px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <div class="overlay">
-<div class="container">
+    <div class="container">
 
-<h1>Noteikumi un nosacījumi</h1>
+        <h1>Noteikumi un nosacījumi</h1>
 
-<p>
-Šie noteikumi attiecas uz visām starptautiskajām dzīves koučinga sesijām,
-kas tiek organizētas tiešsaistē. Rezervējot sesiju, jūs piekrītat šiem noteikumiem.
-</p>
+        <p class="intro">
+            Šie noteikumi attiecas uz visām starptautiskajām dzīves koučinga sesijām,
+            kas tiek organizētas tiešsaistē. Rezervējot sesiju, jūs piekrītat šiem noteikumiem.
+        </p>
 
-<div class="section">
-<h2><span class="icon">&#128179;</span>Maksājums</h2>
-<p>
-Visas sesijas ir jāapmaksā iepriekš pirms tikšanās rezervēšanas.
-Maksājums apstiprina jūsu rezervāciju.
-</p>
+        <div class="cards-grid">
+
+            <div class="section">
+                <h2><i class="fa-regular fa-credit-card icon"></i>Maksājums</h2>
+                <p>
+                    Visas sesijas ir jāapmaksā iepriekš pirms tikšanās rezervēšanas.
+                    Maksājums apstiprina un rezervē jūsu koučinga tikšanos.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fa-solid fa-coins icon"></i>Sesijas cena</h2>
+                <p>
+                    Koučinga sesijas cena ir <strong>35 € par sesiju</strong> (aptuveni 40 ASV dolāri).
+                    Katra sesija parasti ilgst <strong>60 minūtes</strong>.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fa-regular fa-calendar-days icon"></i>Rezervēšana</h2>
+                <p>
+                    Sesijas tiek rezervētas individuāli pēc maksājuma saņemšanas.
+                    Tikšanās notiek tiešsaistē, izmantojot Zoom.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fa-regular fa-clock icon"></i>Atcelšanas politika</h2>
+                <p>
+                    Klienti var atcelt vai pārcelt sesiju līdz <strong>24 stundām pirms tikšanās</strong>
+                    un saņemt pilnu naudas atmaksu.
+                </p>
+                <p>
+                    Ja sesija tiek atcelta <strong>mazāk nekā 24 stundas pirms noteiktā laika</strong>,
+                    maksājums netiek atmaksāts neatkarīgi no iemesla.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fa-solid fa-rotate-left icon"></i>Naudas atmaksa</h2>
+                <p>
+                    Naudas atmaksa tiek veikta tikai tad, ja atcelšana notiek vairāk nekā 24 stundas
+                    pirms plānotās sesijas.
+                </p>
+                <p>
+                    Atmaksa, ja iespējams, tiks veikta, izmantojot sākotnējo maksājuma metodi.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fa-regular fa-id-card icon"></i>Vecuma prasība</h2>
+                <p>
+                    Koučinga pakalpojumi ir pieejami tikai personām,
+                    kas ir <strong>vismaz 18 gadus vecas</strong>.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fa-solid fa-shield-halved icon"></i>Koučinga atruna</h2>
+                <p>
+                    Dzīves koučings ir personīgās attīstības pakalpojums, kas paredzēts,
+                    lai atbalstītu skaidrību, izaugsmi un labāku lēmumu pieņemšanu.
+                </p>
+                <p>
+                    Koučings <strong>nav psihoterapija, psiholoģiska ārstēšana vai medicīniskā aprūpe</strong>.
+                    Klientiem, kuri piedzīvo nopietnas emocionālas vai psiholoģiskas grūtības,
+                    būtu jāmeklē palīdzība pie licencēta garīgās veselības speciālista.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fa-solid fa-globe icon"></i>Starptautiskie klienti</h2>
+                <p>
+                    Sesijas var notikt ar klientiem visā pasaulē.
+                    Klienti ir atbildīgi par piedalīšanos sesijā pareizajā laikā atbilstoši savai vietējai laika zonai.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2><i class="fa-solid fa-lock icon"></i>Konfidencialitāte</h2>
+                <p>
+                    Visas koučinga sesijas tiek vadītas ar cieņu un konfidencialitāti.
+                    Sesiju laikā sniegtā personīgā informācija netiks izpausta trešajām personām.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            © 2026 Diana Bautista – International Life Coaching
+        </div>
+
+        <div class="return">
+            <a href="lv.html">
+                <img src="home.png" alt="Atpakaļ uz sākumu">
+            </a>
+        </div>
+
+    </div>
 </div>
-
-<div class="section">
-<h2><span class="icon">&#128176;</span>Sesijas cena</h2>
-<p>
-Koučinga sesijas cena ir <strong>35 €</strong>(aptuveni 40 ASV dolāri).
-Katra sesija ilgst <strong>60 minūtes</strong>.
-</p>
-</div>
-
-<div class="section">
-<h2><span class="icon">&#128197;</span>Rezervēšana</h2>
-<p>
-Sesijas tiek rezervētas individuāli pēc maksājuma saņemšanas.
-Tikšanās notiek tiešsaistē, izmantojot Zoom.
-</p>
-</div>
-
-<div class="section">
-<h2><span class="icon">&#9200;</span>Atcelšana</h2>
-<p>
-Sesiju var atcelt vai pārcelt līdz <strong>24 stundām pirms tikšanās</strong>
-un saņemt pilnu naudas atmaksu.
-</p>
-
-<p>
-Ja atcelšana notiek <strong>mazāk nekā 24 stundas pirms sesijas</strong>,
-nauda netiek atmaksāta neatkarīgi no iemesla.
-</p>
-</div>
-
-<div class="section">
-<h2><span class="icon">&#128286;</span>Vecuma prasība</h2>
-<p>
-Koučinga pakalpojumi ir pieejami tikai personām,
-kas ir <strong>vismaz 18 gadus vecas</strong>.
-</p>
-</div>
-
-<div class="section">
-<h2><span class="icon">&#9888;</span>Pakalpojuma raksturs</h2>
-<p>
-Dzīves koučings ir personīgās attīstības atbalsta pakalpojums.
-Tas nav psihoterapija vai medicīniska ārstēšana.
-</p>
-</div>
-
-<div class="section">
-<h2><span class="icon">&#128274;</span>Konfidencialitāte</h2>
-<p>
-Visa informācija sesiju laikā tiek uzskatīta par konfidenciālu
-un netiek izpausta trešajām personām.
-</p>
-</div>
-
-<div class="footer">
-© 2026 Diana Bautista – International Life Coaching
-</div>
-
-<div class="return">
-<a href="lv.html">
-<img src="home.png" alt="Atpakaļ">
-</a>
-</div>
-
-</div>
-</div>
-
 </body>
-
 </html>
