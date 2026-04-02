@@ -151,13 +151,11 @@ img {
     padding: 80px 0;
 }
 
-/* REMOVED LIGHT PINK / CREAM BACKGROUND */
 .section-light {
     background: transparent;
     color: var(--white);
 }
 
-/* KEEP SOFT GLASS EFFECT BUT NO PINK */
 .section-soft {
     background: rgba(255,255,255,0.04);
     backdrop-filter: blur(3px);
@@ -191,7 +189,6 @@ img {
     gap: 24px;
 }
 
-/* CARDS NOW TRANSPARENT / GLASSY */
 .card {
     background: rgba(255,255,255,0.08);
     color: var(--white);
@@ -242,7 +239,7 @@ ul.clean-list li:last-child {
     backdrop-filter: blur(4px);
 }
 
-/* SMALLER CONTACT GRID */
+/* CONTACT GRID */
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -250,7 +247,6 @@ ul.clean-list li:last-child {
     margin-top: 30px;
 }
 
-/* SMALLER CONTACT BOXES */
 .contact-box {
     background: rgba(255,255,255,0.08);
     color: var(--white);
@@ -286,7 +282,7 @@ ul.clean-list li:last-child {
     margin: 0;
 }
 
-/* SEND MESSAGE BOX SMALLER */
+/* DEFAULT FORM CARD */
 .form-card {
     background: rgba(255,255,255,0.08);
     color: var(--white);
@@ -305,6 +301,7 @@ ul.clean-list li:last-child {
     color: var(--white);
 }
 
+/* DEFAULT INPUTS */
 input, textarea {
     width: 100%;
     padding: 13px 14px;
@@ -477,12 +474,161 @@ button:hover {
     width: 56px;
 }
 
+/* =========================================================
+   CONTACT FORM WITH SIDE IMAGES - FIXED
+========================================================= */
+
+.contact-bottom-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr 1fr;
+    gap: 28px;
+    align-items: stretch;
+    margin-top: 45px;
+}
+
+.side-image-card {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    min-height: 620px;
+    box-shadow: var(--shadow);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.side-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.side-image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(20, 20, 20, 0.52), rgba(20, 20, 20, 0.10));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+}
+
+.side-image-overlay p {
+    color: #ffffff !important;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin: 0;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.25);
+}
+
+/* CENTER FORM CARD */
+.contact-bottom-wrap .form-card {
+    background: rgba(255,255,255,0.12) !important;
+    color: #ffffff !important;
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    max-width: 100%;
+    margin: 0;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.10);
+    min-height: 620px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-bottom-wrap .form-card h3 {
+    color: #ffffff !important;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-bottom-wrap .form-card p {
+    color: #f4f0ea !important;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.contact-bottom-wrap .form-card label {
+    color: #ffffff !important;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* IMPORTANT: readable typing */
+.contact-bottom-wrap .form-card input,
+.contact-bottom-wrap .form-card textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.22) !important;
+    margin-top: 6px;
+    margin-bottom: 18px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: rgba(255,255,255,0.95) !important;
+    color: #1f1f1f !important;
+    box-sizing: border-box;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #1f1f1f !important;
+}
+
+.contact-bottom-wrap .form-card input::placeholder,
+.contact-bottom-wrap .form-card textarea::placeholder {
+    color: #7d7d7d !important;
+    opacity: 1 !important;
+}
+
+.contact-bottom-wrap .form-card input:focus,
+.contact-bottom-wrap .form-card textarea:focus {
+    outline: none;
+    border: 1px solid var(--soft-gold) !important;
+    box-shadow: 0 0 0 3px rgba(199,169,107,0.18);
+    background: #ffffff !important;
+    color: #1f1f1f !important;
+    -webkit-text-fill-color: #1f1f1f !important;
+}
+
+.contact-bottom-wrap .form-card textarea {
+    min-height: 180px;
+    resize: vertical;
+    line-height: 1.5;
+}
+
+/* BUTTON */
+.contact-bottom-wrap .form-card button {
+    background: var(--soft-gold) !important;
+    color: #1f271f !important;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    min-width: 190px;
+}
+
+.contact-bottom-wrap .form-card button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.03);
+}
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
     .hero-grid,
     .grid-3,
     .grid-2,
     .contact-grid,
-    .language-options {
+    .language-options,
+    .contact-bottom-wrap {
         grid-template-columns: 1fr;
     }
 
@@ -506,4 +652,14 @@ button:hover {
     .form-card {
         max-width: 100%;
     }
+
+    .side-image-card {
+        min-height: 320px;
+    }
+
+    .contact-bottom-wrap .form-card {
+        min-height: auto;
+        padding: 26px 22px;
+    }
 }
+
