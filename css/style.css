@@ -6,9 +6,9 @@
     --deep-forest: #2f4338;
     --text-dark: #2d3a33;
     --white: #ffffff;
-    --overlay: rgba(24, 34, 29, 0.22);
-    --card: rgba(255, 248, 242, 0.90);
-    --shadow: 0 10px 30px rgba(0,0,0,0.14);
+    --overlay: rgba(24, 34, 29, 0.28);
+    --card: rgba(255, 255, 255, 0.10);
+    --shadow: 0 10px 30px rgba(0,0,0,0.18);
     --radius: 18px;
     --transition: all 0.3s ease;
 }
@@ -73,19 +73,19 @@ img {
 }
 
 .hero-card {
-    background: rgba(255, 248, 242, 0.88);
+    background: rgba(255,255,255,0.10);
     padding: 40px;
     border-radius: 28px;
     box-shadow: var(--shadow);
-    border: 1px solid rgba(255,255,255,0.35);
-    color: var(--text-dark);
+    border: 1px solid rgba(255,255,255,0.10);
+    color: var(--white);
 }
 
 .hero-card h1,
 .hero-card h2,
 .hero-card h3,
 .hero-card p {
-    color: var(--text-dark);
+    color: var(--white);
 }
 
 .hero h1 {
@@ -96,14 +96,14 @@ img {
 .hero p.lead {
     font-size: 1.18rem;
     max-width: 700px;
-    color: var(--text-dark);
+    color: #f2efe9;
 }
 
 .hero-photo {
     border-radius: 28px;
     overflow: hidden;
     box-shadow: var(--shadow);
-    border: 2px solid rgba(255,255,255,0.18);
+    border: 2px solid rgba(255,255,255,0.12);
 }
 
 .hero-photo img {
@@ -144,14 +144,14 @@ img {
 }
 
 .btn-secondary {
-    background: rgba(255,255,255,0.88);
-    border: 1px solid rgba(255,255,255,0.5);
-    color: var(--deep-forest);
+    background: rgba(255,255,255,0.14);
+    border: 1px solid rgba(255,255,255,0.18);
+    color: var(--white);
 }
 
 .btn-secondary:hover {
     transform: translateY(-2px);
-    background: rgba(255,255,255,0.96);
+    background: rgba(255,255,255,0.20);
 }
 
 .section {
@@ -164,7 +164,7 @@ img {
 }
 
 .section-soft {
-    background: rgba(255,255,255,0.08);
+    background: rgba(255,255,255,0.04);
     color: var(--white);
     border-radius: 24px;
 }
@@ -174,7 +174,6 @@ img {
     margin-bottom: 20px;
     text-align: center;
     color: var(--white);
-    text-shadow: 0 2px 10px rgba(0,0,0,0.22);
 }
 
 .section-sub {
@@ -183,7 +182,6 @@ img {
     margin: 0 auto 40px;
     opacity: 0.95;
     color: var(--white);
-    text-shadow: 0 2px 10px rgba(0,0,0,0.18);
 }
 
 .grid-3 {
@@ -200,22 +198,22 @@ img {
 
 .card {
     background: var(--card);
-    color: var(--text-dark);
+    color: var(--white);
     border-radius: var(--radius);
     padding: 24px;
     box-shadow: var(--shadow);
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .card h3 {
-    color: var(--deep-forest);
+    color: var(--white);
     font-size: 1.4rem;
     margin-bottom: 12px;
 }
 
 .card p,
 .card li {
-    color: var(--text-dark);
+    color: var(--white);
 }
 
 .icon-card {
@@ -235,8 +233,8 @@ ul.clean-list {
 
 ul.clean-list li {
     padding: 10px 0;
-    border-bottom: 1px solid rgba(47,67,56,0.10);
-    color: var(--text-dark);
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+    color: var(--white);
 }
 
 ul.clean-list li:last-child {
@@ -244,11 +242,11 @@ ul.clean-list li:last-child {
 }
 
 .testimonial {
-    background: rgba(255, 248, 242, 0.90);
+    background: rgba(255,255,255,0.08);
     border-left: 4px solid var(--soft-gold);
     padding: 22px;
     border-radius: 16px;
-    color: var(--text-dark);
+    color: var(--cream);
     box-shadow: var(--shadow);
 }
 
@@ -261,15 +259,15 @@ ul.clean-list li:last-child {
 }
 
 .contact-box {
-    background: rgba(255, 248, 242, 0.90);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.10);
+    color: var(--white);
     text-align: center;
     padding: 16px;
     border-radius: 16px;
     text-decoration: none;
     box-shadow: var(--shadow);
     transition: var(--transition);
-    border: 1px solid rgba(255,255,255,0.35);
+    border: 1px solid rgba(255,255,255,0.10);
     min-height: 170px;
 }
 
@@ -283,33 +281,33 @@ ul.clean-list li:last-child {
 }
 
 .contact-box h3 {
-    color: var(--deep-forest);
+    color: var(--white);
     font-size: 1.15rem;
     margin-bottom: 8px;
 }
 
 .contact-box p {
-    color: var(--text-dark);
+    color: var(--white);
     font-size: 0.95rem;
     margin: 0;
 }
 
 /* DEFAULT FORM CARD */
 .form-card {
-    background: rgba(255, 248, 242, 0.92);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.10);
+    color: var(--white);
     border-radius: 22px;
     padding: 24px;
     box-shadow: var(--shadow);
     max-width: 480px;
     margin: 40px auto 0;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .form-card h3,
 .form-card p,
 .form-card label {
-    color: var(--text-dark);
+    color: var(--white);
 }
 
 /* DEFAULT INPUTS */
@@ -317,18 +315,18 @@ input, textarea {
     width: 100%;
     padding: 13px 14px;
     border-radius: 12px;
-    border: 1px solid rgba(47,67,56,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
     margin-top: 8px;
     margin-bottom: 18px;
     font-size: 1rem;
     font-family: inherit;
-    background: rgba(255,255,255,0.94);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.12);
+    color: var(--white);
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: rgba(45,58,51,0.55);
+    color: rgba(255,255,255,0.72);
 }
 
 textarea {
@@ -361,17 +359,17 @@ button:hover {
 }
 
 .mini-nav a {
-    background: rgba(255,255,255,0.88);
+    background: rgba(255,255,255,0.12);
     padding: 12px 20px;
     border-radius: 999px;
     text-decoration: none;
-    color: var(--deep-forest);
+    color: var(--white);
     transition: var(--transition);
-    border: 1px solid rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .mini-nav a:hover {
-    background: rgba(255,255,255,0.96);
+    background: rgba(255,255,255,0.18);
 }
 
 .footer {
@@ -392,21 +390,21 @@ button:hover {
 }
 
 .language-card {
-    background: rgba(255, 248, 242, 0.92);
+    background: rgba(255,255,255,0.10);
     border-radius: 30px;
     padding: 40px;
     box-shadow: var(--shadow);
     width: min(950px, 92%);
     text-align: center;
-    color: var(--text-dark);
-    border: 1px solid rgba(255,255,255,0.35);
+    color: var(--white);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .language-card h1,
 .language-card h2,
 .language-card h3,
 .language-card p {
-    color: var(--text-dark);
+    color: var(--white);
 }
 
 .language-options {
@@ -417,14 +415,14 @@ button:hover {
 }
 
 .lang-box {
-    background: rgba(255,255,255,0.88);
-    color: var(--deep-forest);
+    background: rgba(255,255,255,0.12);
+    color: var(--white);
     padding: 30px;
     border-radius: 24px;
     text-decoration: none;
     transition: var(--transition);
     box-shadow: var(--shadow);
-    border: 1px solid rgba(255,255,255,0.45);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .lang-box:hover {
@@ -444,18 +442,17 @@ button:hover {
 .page-hero-small h1 {
     font-size: clamp(2rem, 5vw, 3.3rem);
     color: var(--white);
-    text-shadow: 0 2px 10px rgba(0,0,0,0.22);
 }
 
 .page-card {
-    background: rgba(255, 248, 242, 0.92);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.10);
+    color: var(--white);
     border-radius: 24px;
     padding: 36px;
     box-shadow: var(--shadow);
     max-width: 950px;
     margin: 0 auto 60px;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .page-card h1,
@@ -463,7 +460,7 @@ button:hover {
 .page-card h3,
 .page-card p,
 .page-card li {
-    color: var(--text-dark);
+    color: var(--white);
 }
 
 .payment-row {
@@ -475,8 +472,8 @@ button:hover {
 }
 
 .payment-box {
-    background: rgba(255, 248, 242, 0.92);
-    color: var(--text-dark);
+    background: rgba(255,255,255,0.10);
+    color: var(--white);
     border-radius: 20px;
     padding: 24px;
     width: min(320px, 100%);
@@ -484,7 +481,7 @@ button:hover {
     text-decoration: none;
     transition: var(--transition);
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .payment-box:hover {
@@ -506,7 +503,7 @@ button:hover {
 }
 
 /* =========================================================
-   CONTACT FORM WITH SIDE IMAGES - FIXED
+   CONTACT FORM WITH SIDE IMAGES
 ========================================================= */
 
 .contact-bottom-wrap {
@@ -523,8 +520,8 @@ button:hover {
     overflow: hidden;
     min-height: 620px;
     box-shadow: var(--shadow);
-    background: rgba(255,255,255,0.12);
-    border: 1px solid rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.10);
 }
 
 .side-image-card img {
@@ -537,7 +534,7 @@ button:hover {
 .side-image-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(20, 20, 20, 0.38), rgba(20, 20, 20, 0.06));
+    background: linear-gradient(to top, rgba(20, 20, 20, 0.40), rgba(20, 20, 20, 0.08));
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -556,14 +553,14 @@ button:hover {
 
 /* CENTER FORM CARD */
 .contact-bottom-wrap .form-card {
-    background: rgba(255, 248, 242, 0.94) !important;
-    color: var(--text-dark) !important;
+    background: rgba(255,255,255,0.12) !important;
+    color: #ffffff !important;
     border-radius: 22px;
     padding: 30px;
     box-shadow: var(--shadow);
     max-width: 100%;
     margin: 0;
-    border: 1px solid rgba(255,255,255,0.35);
+    border: 1px solid rgba(255,255,255,0.10);
     min-height: 620px;
     display: flex;
     flex-direction: column;
@@ -571,20 +568,20 @@ button:hover {
 }
 
 .contact-bottom-wrap .form-card h3 {
-    color: var(--deep-forest) !important;
+    color: #ffffff !important;
     font-size: 2rem;
     margin-bottom: 10px;
     text-align: center;
 }
 
 .contact-bottom-wrap .form-card p {
-    color: var(--text-dark) !important;
+    color: #f4f0ea !important;
     margin-bottom: 22px;
     text-align: center;
 }
 
 .contact-bottom-wrap .form-card label {
-    color: var(--deep-forest) !important;
+    color: #ffffff !important;
     font-weight: 700;
     display: block;
     margin-bottom: 8px;
@@ -598,12 +595,12 @@ button:hover {
     width: 100%;
     padding: 14px 16px;
     border-radius: 14px;
-    border: 1px solid rgba(47,67,56,0.14) !important;
+    border: 1px solid rgba(255,255,255,0.22) !important;
     margin-top: 6px;
     margin-bottom: 18px;
     font-size: 1rem;
     font-family: inherit;
-    background: rgba(255,255,255,0.98) !important;
+    background: rgba(255,255,255,0.95) !important;
     color: #1f1f1f !important;
     box-sizing: border-box;
     opacity: 1 !important;
@@ -692,4 +689,3 @@ button:hover {
         padding: 26px 22px;
     }
 }
-
