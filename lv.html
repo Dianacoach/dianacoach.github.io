@@ -308,20 +308,17 @@ Brīvi runāju angļu, latviešu un krievu valodā. Mans darbs ir palīdzēt cil
 
             <!-- CENTER FORM -->
             <div class="form-card">
-                <h3>Nosūtīt ziņu</h3>
-                <p>Lūdzu, iekļaujiet īsu aprakstu un veidu, kā es varu ar jums sazināties.</p>
+                <h2>Sāciet savu BEZMAKSAS 30 minūšu izmēģinājumu tagad</h2>
+                <p>Lūdzu, iekļaujiet savu kontaktinformāciju ziņojuma iekšpusē.</p>
 
                 <form action="https://formspree.io/f/mvzwrnel" method="POST">
                     <input type="hidden" name="_subject" value="Ziņa no Diana Life Coaching mājaslapas">
                     <input type="text" name="_gotcha" style="display:none">
 
                     <label for="subject">Īss apraksts:</label>
-                    <input type="text" id="subject" name="subject" maxlength="30" required>
+                    <textarea id="message" rows="8" required placeholder="Šeit ierakstiet savu ziņu un kontaktinformāciju..."></textarea>
 
-                    <label for="message">Jūsu ziņa:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <div style="text-align:center;">
+                   <div style="text-align:center; margin-top:15px;">
                         <button type="submit">Nosūtīt ziņu</button>
                     </div>
                 </form>
